@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'txb_rz0xfm7afn+cma@(4m0ek!xp17cy)$^&ljst=jja6n8@%r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -146,3 +147,8 @@ EMAIL_PORT= 587
 EMAIL_HOST_USER='hbatesting@gmail.com'
 EMAIL_HOST_PASSWORD='Vasavi.123'
 EMAIL_USE_TLS=True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
