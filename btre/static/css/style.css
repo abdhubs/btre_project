@@ -15,15 +15,19 @@ img {
   margin-right: 0.4rem; }
 
 #showcase {
-  background: url(../img/showcase.jpg) no-repeat top center fixed/cover;
+  background: url(../img/showcase.jpg) no-repeat top center fixed;
+  background-size: cover;
   position: relative;
   min-height: 650px;
   color: #fff;
-  padding-top: 6rem; }
-  #showcase .home-search {
+  padding-top: 6rem; 
+}
+
+#showcase .home-search {
     min-height: 400px;
     position: relative;
-    border-radius: 5px; }
+    border-radius: 5px; 
+}
   #showcase .overlay {
     content: '';
     position: absolute;
@@ -45,7 +49,7 @@ img {
     left: 0;
     min-height: 100%;
     width: 100%;
-    background: rgba(32, 134, 107, 0.8); }
+    background-color: seagreen; }
 
 #showcase-inner {
   background: url(../img/building.jpg) no-repeat top center fixed/cover;
@@ -59,7 +63,7 @@ img {
     left: 0;
     min-height: 100%;
     width: 100%;
-    background: rgba(32, 134, 107, 0.8); }
+    background-color: seagreen; }
   #showcase-inner.showcase-search {
     min-height: 270px; }
 
@@ -93,4 +97,28 @@ img {
   #showcase h1 {
     font-size: 30px; }
   #showcase-inner h1 {
-    font-size: 40px; } }
+    font-size: 40px; } 
+  }
+.closebtnalert {
+      font-size: 10px;
+      float: right;
+      padding: 5px 10px;
+      display: inline-block;
+      color: #fff;
+      background: #000;
+      margin-top: 25px;
+  }
+  .alertbar {
+    position: fixed;
+    background: #cf202e;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 0 10px #333;
+    z-index: 9999999;
+}
+.alertrrow {
+  font-size: 34px;
+  color: #000;
+  float: left;
+  padding: 0px 10px 50px;
+}

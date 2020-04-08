@@ -148,6 +148,7 @@ EMAIL_HOST_USER='hbatesting@gmail.com'
 EMAIL_HOST_PASSWORD='Vasavi.123'
 EMAIL_USE_TLS=True
 
+
 try:
     from .local_settings import *
 except ImportError:

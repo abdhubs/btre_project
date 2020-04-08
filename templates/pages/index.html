@@ -1,3 +1,24 @@
+<div class="alertbar" id="myDiv">
+  <div class="container"><a href="javascript:void();" class="closebtnalert" onclick="this.parentNode.style.display='none';">
+     Close 
+     <span>X</span></a>
+    <div class="alerttextbosx">
+        <div class="alertrrow">
+          <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="alerttext">
+          <strong></strong>
+        </div>
+        <h3><strong>Coronavirus Update</strong></h3>
+        <p><span>Please save yourselves and protect others by staying at Home.<br>
+              Please visit this <a style="color: #ffffff;" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"><strong><u>site</u></strong></a> for more information on the corona virus.
+        </p>
+        <div class="clear">
+          
+        </div>
+     </div>
+  </div>
+</div>    
 {% extends 'base.html' %} 
 {% load humanize %}
 {% block title %}| Welcome {% endblock %}
@@ -8,10 +29,10 @@
       <div class="home-search p-5">
         <div class="overlay p-5">
           <h1 class="display-4 mb-4">
-            Property Searching Just Got So Easy
+            Find Your Belle Mansion
           </h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
-            voluptatum tempore! Consectetur, id commodi!</p>
+          <p class="lead">We have the most listings and constant updates.
+            So you’ll never miss out.</p>
           <div class="search">
             <form action="{% url 'search' %}">
               <!-- Form Row 1 -->
@@ -56,7 +77,7 @@
                   </select>
                 </div>
               </div>
-              <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Search Listing</button>
             </form>
           </div>
         </div>
@@ -70,6 +91,7 @@
   <section id="listings" class="py-5">
     <div class="container">
       <h3 class="text-center mb-3">Latest Listings</h3>
+      <center><a href="/listings" style="text-align:center"><strong style="color: black;"><u>Click</u> Here for All Listings</strong></a></center>
       <div class="row">
         {% if listings %}
           {% for listing in listings %}
@@ -128,25 +150,25 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-4">
-          <i class="fas fa-comment fa-4x mr-4"></i>
-          <hr>
-          <h3>Consulting Services</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
-        </div>
-        <div class="col-md-4">
           <i class="fas fa-home fa-4x mr-4"></i>
           <hr>
           <h3>Propery Management</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <p> Property purchased here cannot be lost or stolen, nor can it be 
+            carried away. It is one of the safest investments
+              in  world.</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-suitcase fa-4x mr-4"></i>
           <hr>
           <h3>Renting & Selling</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <p>Owning a home is a keystone of wealth…both 
+            financial affluence and emotional security.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-user  fa-4x mr-4"></i>
+          <hr>
+          <h3>Contact Us</h3>
+          <p>For any inquiries, Please write us  @abdrealestate.co</p>
         </div>
       </div>
     </div>
