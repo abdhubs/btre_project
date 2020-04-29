@@ -91,13 +91,12 @@
   <section id="listings" class="py-5">
     <div class="container">
       <h3 class="text-center mb-3">Latest Listings</h3>
-      <center><a href="/listings" style="text-align:center"><strong style="color: black;"><u>Click</u> Here for All Listings</strong></a></center>
       <div class="row">
         {% if listings %}
           {% for listing in listings %}
             <div class="col-md-6 col-lg-4 mb-4">
               <div class="card listing-preview">
-                <img class="card-img-top" src="{{listing.photo_main.url}}" alt="">
+                <img class="card-img-top" height="250" width="100" src="{{listing.photo_main.url}}" alt="">
                 <div class="card-img-overlay">
                   <h2>
                     <span class="badge badge-secondary text-white">${{listing.price | intcomma}}</span>
@@ -145,7 +144,13 @@
       </div>
     </div>
   </section>
-
+   
+  <div>
+   <section id="works">
+               <center><a href="/listings" class="btn btn-secondary text-white btn-lg">View All Listings</a></center>
+   </section>
+ </div>
+ <br>
   <section id="services" class="py-5 bg-secondary text-white">
     <div class="container">
       <div class="row text-center">
